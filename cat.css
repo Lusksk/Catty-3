@@ -54,17 +54,18 @@ a {
     font-family: cursive;
 }
 .d1, .d2, .d3, .d4, {
-    width: 40%;  /* Ajusta para 40% da largura da tela */
+    width: 100%; /* Ajusta para 100% da largura da tela em dispositivos pequenos */
     height: 50px;
     margin-top: 25px;
     border-radius: 25px;
+    border: 2px solid var(--roxinho);
     transition: all 0.6s ease;
     font-size: 22px;
     font-family: cursive;
     padding-left: 10px;
     padding-top: 4px;
     color: var(--borda);
-    border: 2px solid var(--roxinho);
+}
 .d5 {
     width: 140px;
     height: 50px;
@@ -457,12 +458,24 @@ html, body {
 
 
     
-    @media (max-width: 768px) {
-    .cabfl {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    @media (min-width: 768px) {
+    .d1, .d2, .d3, .d4, .d5 {
+        width: 40%; /* Ajusta para 40% da largura da tela em telas maiores */
     }
+}
+
+/* Para dispositivos pequenos (como celulares) */
+@media (max-width: 767px) {
+    .d1, .d2, .d3, .d4, .d5 {
+        width: 90%; /* Ajusta para 90% da largura da tela em telas pequenas */
+    }
+}
+
+
+
+
+
+
 
     .let {
         font-size: 20px;
