@@ -437,6 +437,12 @@ a {
     margin-left: 1760px;
     
 }
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  max-width: 100%;
+}
 .like {
     margin-left: 1760px;
 }
