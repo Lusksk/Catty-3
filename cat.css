@@ -12,7 +12,7 @@
 }
 body {
     margin: 0;
-    background-color: var(--roxinho);
+    background-color: var(--branco);
     font-family: cursive;
     height: 5500px;
 }
@@ -58,7 +58,7 @@ a {
 .d1 {
     width: 160px;
     height: 50px;
-    background-color: var(--fundo);
+    background-color: var(--roxinho);
     margin-top: 25px;
     
     border-radius: 25px;
